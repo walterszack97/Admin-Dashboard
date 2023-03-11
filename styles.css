@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "sidebar contentCont";
+}
+
+.sidebar {
+    background-color: antiquewhite;
+    grid-area: sidebar;
+
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: "logo "
+                        "links"
+                        "supportLinks";
+    gap: 30px;
+    
+}
+.logo {
+    grid-area: logo;
+}
+.links {
+    grid-area: links;
+}
+.support_links {
+    grid-area: supportLinks
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.content_container {
+    background-color: aquamarine;
+    grid-area: contentCont;
+}
