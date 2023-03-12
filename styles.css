@@ -12,7 +12,7 @@ body {
     grid-template-rows: .8fr 5fr;
     grid-template-areas: "sidebar contentCont"
                         "sidebar contentCont";
-                        height: 100vh;
+    height: 100vh;
 }
 
 .sidebar {
@@ -39,8 +39,9 @@ body {
 .logoCont {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px 0 10px;
     gap: 10px;
+    font-size: 1.5rem;
 }
 .logoCont img {
     filter: invert(1);
@@ -65,15 +66,20 @@ body {
 }
 
 .content_container {
-    background-color: aquamarine;
-    grid-area: contentCont;
+    background-color: rgb(176, 176, 176);
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "header"
+                        "main";
+    height: 100vh;
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 50% 100px 100px 100px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "searchBar notifications proPic user"
-                         "profile new upload share";
+    background-color: aqua;
+    grid-area: header;
+}
+.main_content {
+    background-color: aquamarine;
+    grid-area: main;
 }
 
