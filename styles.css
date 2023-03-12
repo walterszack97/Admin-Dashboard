@@ -1,23 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+}
+body {
+    font-family: Roboto, Arial;
+}
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "sidebar contentCont";
+    grid-template-columns: .8fr 5fr;
+    grid-template-rows: .8fr 5fr;
+    grid-template-areas: "sidebar contentCont"
+                        "sidebar contentCont";
+                        height: 100vh;
 }
 
 .sidebar {
-    background-color: antiquewhite;
+    background-color: rgb(40, 153, 223);
     grid-area: sidebar;
-
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: .5fr 2fr 3fr;
     grid-template-areas: "logo "
                         "links"
                         "supportLinks";
     gap: 30px;
+    color: white;
     
 }
 .logo {
-    grid-area: logo;
+    grid-template-columns: 1fr 1fr;
 }
 .links {
     grid-area: links;
@@ -25,14 +36,44 @@
 .support_links {
     grid-area: supportLinks
 }
-
+.logoCont {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.logoCont img {
+    filter: invert(1);
+}
+#logo {
+    width: 3rem;
+}
 .navigation {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 3fr;
+    align-items: center;
+    padding: 10px 30px;
 }
-
+.navigation>p{
+    justify-self: flex-start;
+    padding-left: 20px;
+}
+.navigation img {
+    filter: invert(1);
+    height: auto;
+    width: 1.5rem;
+}
 
 .content_container {
     background-color: aquamarine;
     grid-area: contentCont;
 }
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 100px 100px 100px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "searchBar notifications proPic user"
+                         "profile new upload share";
+}
+
