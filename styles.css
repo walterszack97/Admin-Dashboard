@@ -121,8 +121,30 @@ a:link, a:visited, a:hover, a:active {
     width: 40px;
 }
 
+.headerBottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 20px;
+}
+.bottomLeft {
+    display: flex;
+    align-items: center;
+}
+.largePropic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 141, 253);
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+.largePropic img {
+    height: 60px;
+}
+
 .main_content {
-    background-color: aquamarine;
+    background-color: rgb(225, 225, 234);
     grid-area: main;
 }
 
