@@ -6,6 +6,11 @@
 body {
     font-family: Roboto, Arial;
 }
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 .container {
     display: grid;
     grid-template-columns: .8fr 5fr;
