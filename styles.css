@@ -175,5 +175,23 @@ a:link, a:visited, a:hover, a:active {
 .main_content {
     background-color: rgb(225, 225, 234);
     grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "yourProjects announcements"
+                        "yourProjects trending";
+    padding: 20px;
+    gap: 20px;
 }
-
+.yourProjects {
+    background-color: aqua;
+    grid-area: yourProjects;
+}
+.announcements {
+    background-color: bisque;
+    grid-area: announcements;
+}
+.trending {
+    background-color: rgb(161, 224, 132);
+    grid-area: trending;
+}
