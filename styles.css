@@ -99,6 +99,7 @@ a:link, a:visited, a:hover, a:active {
 }
 #searchbar {
     margin-left: 20px;
+    padding: 10px;
     border: none;
     background-color: rgb(225, 225, 234);
     border-radius: 15px;
