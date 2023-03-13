@@ -242,7 +242,10 @@ a:link, a:visited, a:hover, a:active {
     overflow: auto;
     justify-content: space-between;
 }
-
+.cardBody h3 {
+    padding-bottom: 10px;
+    color: black;
+}
 .cardActions {
     display: flex;
     gap: 10px;
