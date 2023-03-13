@@ -5,6 +5,7 @@
 }
 body {
     font-family: Roboto, Arial;
+    background-color: rgb(40, 153, 223);
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -30,7 +31,7 @@ a:link, a:visited, a:hover, a:active {
                         "supportLinks";
     gap: 30px;
     color: white;
-    
+    height: 100%;
 }
 .logo {
     grid-template-columns: 1fr 1fr;
@@ -39,7 +40,7 @@ a:link, a:visited, a:hover, a:active {
     grid-area: links;
 }
 .support_links {
-    grid-area: supportLinks
+    grid-area: supportLinks;
 }
 .logoCont {
     display: flex;
@@ -188,6 +189,26 @@ a:link, a:visited, a:hover, a:active {
                         "yourProjects trending";
     padding: 20px;
     gap: 20px;
+    
+}
+.yourProjects {
+    background-color: rgb(225, 225, 234);
+    grid-area: yourProjects;
+    
+}
+
+.main_content {
+    background-color: rgb(225, 225, 234);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "yourProjects announcements"
+                        "yourProjects trending";
+    padding: 20px;
+    gap: 20px;
 }
 .yourProjects {
     background-color: rgb(225, 225, 234);
@@ -199,16 +220,19 @@ a:link, a:visited, a:hover, a:active {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 250px;
     grid-auto-flow: row;
+    max-height: 200px;
     gap: 2rem;
     padding-bottom: 2rem;
-    padding-right: 10px;
-    
+    padding-right: 10px; 
 }
+
 .card {
     display: flex;
     flex-direction: column;
     border-left: 10px solid orange;
     background-color: white;
+    box-shadow: 2px 2px 2px rgb(176, 176, 176);
+    color: rgb(81, 81, 81);
     border-radius: 10px;
     padding: 2rem;
     padding-right: 10px;
@@ -216,6 +240,7 @@ a:link, a:visited, a:hover, a:active {
     overflow: auto;
     justify-content: space-between;
 }
+
 .cardActions {
     display: flex;
     gap: 10px;
@@ -225,17 +250,59 @@ a:link, a:visited, a:hover, a:active {
 .project-heading {
    padding: 10px;
    font-size: 1rem;
-   font-weight: 500;
+   font-weight: 600;
+   letter-spacing: 2px;
 }
 .announcements {
-    background-color: bisque;
+    background-color: rgb(225, 225, 234);
     grid-area: announcements;
 }
 .trending {
-    background-color: rgb(161, 224, 132);
+    background-color: rgb(225, 225, 234);
     grid-area: trending;
 }
-
 .cardBtn {
     height: 20px;
+}
+
+.cardAnnouncements, .trendingAccounts {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(81, 81, 81);
+}
+.announcementBody {
+    padding: 10px;
+}
+.announcementTitle {
+    font-weight: bold;
+    font-size: .9rem;
+    padding-bottom: 4px;
+}
+.announcementDescription {
+    font-size: .8rem;
+    color: rgb(81, 81, 81);
+}
+.trendingAccounts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.trendingAccount {
+    display: flex;
+    align-items: center;
+}
+.trendingPropic {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+.trendingUser {
+    font-size: .8rem;
+}
+.trendingBio {
+    font-size: .8rem;
+    color: rgb(81, 81, 81);
 }
