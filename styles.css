@@ -104,7 +104,7 @@ a:link, a:visited, a:hover, a:active {
     border-radius: 15px;
     height: 20px;
     width: 40vw;
-    max-width: 470px;
+    max-width: 600px;
 }
 .topRight {
     display: flex;
@@ -119,11 +119,12 @@ a:link, a:visited, a:hover, a:active {
     background-color: rgb(156, 141, 253);
     border-radius: 50%;
     height: 40px;
-    width: 40px;
+    min-width: 40px;
 }
 
 .headerBottom {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 50px 20px;
 }
@@ -138,7 +139,7 @@ a:link, a:visited, a:hover, a:active {
     background-color: rgb(156, 141, 253);
     border-radius: 50%;
     height: 65px;
-    width: 65px;
+    min-width: 65px;
 }
 .largePropic img {
     height: 60px;
@@ -155,6 +156,20 @@ a:link, a:visited, a:hover, a:active {
 }
 .name {
     font-size: 1.2rem;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 20px;
+}
+.inputBtn {
+    width: 75px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(40, 153, 223);
+    color: white;
+    font-weight: bold;
 }
 
 .main_content {
