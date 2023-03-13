@@ -99,13 +99,16 @@ a:link, a:visited, a:hover, a:active {
 }
 #searchbar {
     margin-left: 20px;
-    padding: 10px;
+    padding-left: 10px;
     border: none;
     background-color: rgb(225, 225, 234);
     border-radius: 15px;
     height: 20px;
     width: 40vw;
     max-width: 600px;
+}
+#searchbar:focus {
+    outline: none;
 }
 .topRight {
     display: flex;
