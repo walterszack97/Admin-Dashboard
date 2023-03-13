@@ -6,6 +6,7 @@
 body {
     font-family: Roboto, Arial;
     background-color: rgb(40, 153, 223);
+    height: 100%;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -19,6 +20,7 @@ a:link, a:visited, a:hover, a:active {
     grid-template-areas: "sidebar contentCont"
                         "sidebar contentCont";
     height: 100vh;
+    overflow: auto;
 }
 
 .sidebar {
