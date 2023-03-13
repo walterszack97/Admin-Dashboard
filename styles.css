@@ -40,9 +40,11 @@ a:link, a:visited, a:hover, a:active {
 }
 .links {
     grid-area: links;
+    align-self: center;
 }
 .support_links {
     grid-area: supportLinks;
+    align-self: flex-start;
 }
 .logoCont {
     display: flex;
