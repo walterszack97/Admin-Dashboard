@@ -104,6 +104,7 @@ a:link, a:visited, a:hover, a:active {
     border-radius: 15px;
     height: 20px;
     width: 40vw;
+    max-width: 470px;
 }
 .topRight {
     display: flex;
@@ -141,6 +142,19 @@ a:link, a:visited, a:hover, a:active {
 }
 .largePropic img {
     height: 60px;
+}
+.name-greeting {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 5px;
+    padding: 10px;
+}
+.greeting {
+    font-size: .8rem;
+}
+.name {
+    font-size: 1.2rem;
 }
 
 .main_content {
